@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202225;
+}
+
+/* Start NavigationBar */
+
+nav{
+    width: 100%;
+    max-width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 1em;
+    z-index: 9;
+}
+
+nav div.content{
+    width: 50%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgba(32, 34, 37, 0.6);
+    border-radius: 25px;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, .6),
+                4px 4px 10px rgba(0, 0, 0, .8),
+                -4px -4px 30px rgba(255, 255, 255, .1),
+                -2px -2px 10px rgba(227, 241, 255, .2);
+    backdrop-filter: blur(10px);
+}
+
+nav div.content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div.content ul a{
+    text-decoration: none;
+    margin: 1em;
+}
+
+nav div.content ul a li{
+    display: flex;
+    list-style: none;
+    color: #ececec;
+    transition: .3s;
+}
+
+        nav div.content ul a li:hover{
+            color: #24cedf;
+            letter-spacing: 1px;
+        }
+
+
+nav div.content img{
+    width: 50px;
+    margin-top: 8px;
+}
+
+nav div.content div.entry{
+    padding: 0 10px;
+    border-radius: 100vw;
+    border: solid 3px #181a1c;
+    box-shadow: inset 4px 4px 20px rgba(0, 0, 0, .5),
+                inset 4px 4px 10px rgba(0, 0, 0, .8),
+                inset -4px -4px 20px rgba(255, 255, 255, .1),
+                inset -2px -2px 10px rgba(227, 241, 255, .07);
+}
+
+nav div.content div.entry ul a.signUp{
+    opacity: .7;
+}
+
+nav div.content div.entry ul a.logIn{
+
+    width: 90px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 100vw;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, .5),
+                4px 4px 10px rgba(0, 0, 0, .8),
+                -4px -4px 20px rgba(255, 255, 255, .1),
+                -2px -2px 10px rgba(227, 241, 255, .07);
+    transition: .4s;
+}
+        nav div.content div.entry ul a.logIn:hover{
+            background-color: #1f1f1f;
+        }
+
+
+/* End NavigationBar */
+
+
+/* Start Sections */
+/* //////////////////////////// */
+
+
+/* Start Section One */
+
+section.sec_1{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section.sec_1 div.content{
+    width: 80%;
+    height: 70%;
+    position: relative;
+}
+
+section.sec_1 div.content div.circle{
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+section.sec_1 div.content div.circle.crl_1{
+    width: 800px;
+    height: 800px;
+    background: #24cedf;
+    position: absolute;
+    left: -50em;
+    top: -30em;
+    filter: blur(100px);
+}
+section.sec_1 div.content div.circle.crl_2{
+    width: 1000px;
+    height: 1000px;
+    background: #350a79;
+    position: absolute;
+    right: -30em;
+    top: -20em;
+    filter: blur(150px);
+}
+
+section.sec_1 div.content img{
+    width: 50em;
+    position: absolute;
+    right: 0;
+    top: 7em;
+}
+section.sec_1 div.content h2{
+    position: absolute;
+    left: 1em;
+    top: 2.5em;
+    color: #ececec;
+    font-size: 80px;
+}
+section.sec_1 div.content h2 span{
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: 6px;
+}
+
+
+/* Start Section Two */
+
+section.sec_2{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sec_2 div.content{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+section.sec_2 div.content div.lang{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10em 15em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section.sec_2 div.content div.lang .label{
+    text-align: center;
+}
+section.sec_2 div.content div.lang h3{
+    font-size: 50px;
+    color: #ececec;
+}
+section.sec_2 div.content div.lang p{
+    font-size: 20px;
+    color: #24cedf;
+}
+
+section.sec_2 div.content div.lang.html,.lang.js{
+    background-color: #c9ccd4;
+}
+
+section.sec_2 div.content div.lang.html h3{
+    color: #202225;
+}
+section.sec_2 div.content div.lang.html p{
+    color: #4b00a7;
+}
+
+section.sec_2 div.content div.lang.js h3{
+    color: #202225;
+}
+section.sec_2 div.content div.lang.js p{
+    color: #4b00a7;
+}
+
+section.sec_2 div.content div.lang div.btn{
+    text-align: center;
+    display: grid;
+    
+}
+
+section.sec_2 div.content div.lang.html div.btn a.b1{
+    background: linear-gradient(145deg, #b5b8bf, #d7dae3);
+    box-shadow:  10px 10px 30px #808287,
+                -10px -10px 30px #f9fdff;
+    color: #202225;
+}
+
+        section.sec_2 div.content div.lang.html div.btn a.b1:hover{
+            color: #4b00a7;
+        }
+section.sec_2 div.content div.lang.html div.btn a.b2{
+    background: linear-gradient(145deg, #b5b8bf, #d7dae3);
+    box-shadow: inset 6px 6px 10px #808287,
+                inset -6px -6px 10px #f9fdff;
+    color: #4b00a7;
+    font-weight: 500;
+}
+
+
+section.sec_2 div.content div.lang.js div.btn a.b1{
+    background: linear-gradient(145deg, #b5b8bf, #d7dae3);
+    box-shadow:  10px 10px 30px #808287,
+                -10px -10px 30px #f9fdff;
+    color: #202225;
+}
+
+        section.sec_2 div.content div.lang.js div.btn a.b1:hover{
+            color: #4b00a7;
+        }
+section.sec_2 div.content div.lang.js div.btn a.b2{
+    background: linear-gradient(145deg, #b5b8bf, #d7dae3);
+    box-shadow: inset 6px 6px 10px #808287,
+                inset -6px -6px 10px #f9fdff;
+    color: #4b00a7;
+    font-weight: 500;
+}
+section.sec_2 div.content div.lang div.btn a{
+    width: 300px;
+    height: 70px;
+    border-radius: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em 0;
+    text-decoration: none;
+    color: #ececec;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+    section.sec_2 div.content div.lang div.btn a.b1:hover{
+        color: #24cedf;
+        letter-spacing: 1px;
+    }
+    section.sec_2 div.content div.lang div.btn a.b2:hover{
+        background-color: #24cedf;
+        color: #181a1c;
+        font-weight: 500;
+    }
+
+
+section.sec_2 div.content div.lang div.btn a.b1{
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 1),
+                6px 6px 10px rgba(0, 0, 0, .5),
+                -2px -2px 20px rgba(227, 241, 255, .08),
+                -2px -2px 10px rgba(227, 241, 255, .2);
+}
+section.sec_2 div.content div.lang div.btn a.b2{
+    box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 1),
+                inset 6px 6px 10px rgba(0, 0, 0, .5),
+                inset -2px -2px 20px rgba(227, 241, 255, .08),
+                inset -2px -2px 10px rgba(227, 241, 255, .2);
+}
+
+
+/* Start Section Three */
+
+section.sec_3{
+    width: 100%;
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+section.sec_3 div.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section.sec_3 div.content img{
+    width: 50em;
+}
+
+section.sec_3 div.content .label{
+    position: absolute;
+    bottom: 5em;
+    left: 30em;
+}
+
+section.sec_3 div.content .label h4{
+    font-size: 80px;
+    color: #ececec;
+}
+
+section.sec_3 div.content p{
+    color: #24cedf;
+    font-style: italic;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+section.sec_3 div.content a{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    right: 37em;
+    top: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #24cedf;
+    background-color: #202225;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 100vw;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 1),
+                6px 6px 10px rgba(0, 0, 0, .5),
+                -2px -2px 20px rgba(227, 241, 255, .08),
+                -2px -2px 10px rgba(227, 241, 255, .2);
+    transition: .3s;
+}
+        section.sec_3 div.content a:hover{
+            box-shadow: inset 6px 6px 20px rgba(0, 0, 0, 1),
+                inset 6px 6px 10px rgba(0, 0, 0, .5),
+                inset -2px -2px 20px rgba(227, 241, 255, .08),
+                inset -2px -2px 10px rgba(227, 241, 255, .2);
+            
+            letter-spacing: 1px;
+
+        }
+
+/* Start Section Four */        
+
+section.sec_4{
+    width: 100%;
+    max-width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #96d4d4;
+}
+
+section.sec_4 div.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+section.sec_4 div.content h5,h6{
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 40px;
+}
+
+section.sec_4 div.content p{
+    font-size: 20px;
+    color: #464646;
+    margin-top: 10px;
+}
+
+section.sec_4 div.content img{
+    width: 120px;
+    margin: 1em;
+}
+
+section.sec_4 div.content a{
+    width: 200px;
+    height: 50px;
+    background-color: #202225;
+    border-radius: 100vw;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ececec;
+    font-size: 18px;
+}
+
+    section.sec_4 div.content a:hover{
+        color: #24cedf;
+    }
+
+
+/* Start Section Five */
+
+section.sec_5{
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sec_5 div.content{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.sec_5 div.content h4{
+    color: #ececec;
+    font-size: 80px;
+}
+section.sec_5 div.content p{
+    font-size: 20px;
+    color: #24cedf;
+}
+
+section.sec_5 div.content img{
+    width: 45em;
+}
+
+section.sec_5 div.content a{
+    width: 400px;
+    padding: 13px 0;
+    background-color: #202225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 1),
+                6px 6px 10px rgba(0, 0, 0, .5),
+                -2px -2px 20px rgba(227, 241, 255, .08),
+                -2px -2px 10px rgba(227, 241, 255, .4);
+    border-radius: 100vw;
+    margin-top: 4em;
+    color: #ececec;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+}
+
+        section.sec_5 div.content a:hover{
+            color: #24cedf;
+        }
